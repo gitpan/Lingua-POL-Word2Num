@@ -1,7 +1,7 @@
 # For Emacs: -*- mode:cperl; mode:folding -*-
 
 package Lingua::POL::Word2Num;
-# ABSTRACT: Lingua::POL::Word2Num is module for converting text containing number representation in polish back into number. Converts whole numbers from 0 up to 999 999 999.
+# ABSTRACT: Word 2 number conversion in POL.
 
 # {{{ use block
 
@@ -15,8 +15,7 @@ use Parse::RecDescent;
 # }}}
 # {{{ var block
 
-my($ver)      = ('$Rev: 440 $' =~ m{(\d+)}xms);
-our $VERSION = $ver / 10_000;
+our $VERSION = 0.0577;
 my $COPY     = 'Copyright (C) PetaMem, s.r.o. 2003-present';
 my $parser   = pl_numerals();
 
@@ -144,12 +143,12 @@ Lingua::POL::Word2Num
 
 =head1 VERSION
 
-version 0.044
+version 0.0577
 
 text to positive number convertor for Polish.
 Input text must be encoded in utf-8.
 
-=head2 $Rev: 440 $
+=head2 $Rev: 577 $
 
 ISO 639-3 namespace.
 
@@ -162,6 +161,8 @@ ISO 639-3 namespace.
  print defined($num) ? $num : "sorry, can't convert this text into number.";
 
 =head1 DESCRIPTION
+
+Word 2 number conversion in POL.
 
 Lingua::POL::Word2Num is module for converting text containing number
 representation in polish back into number. Converts whole numbers from 0 up
