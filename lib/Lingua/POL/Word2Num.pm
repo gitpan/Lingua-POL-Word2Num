@@ -5,6 +5,8 @@ package Lingua::POL::Word2Num;
 
 # {{{ use block
 
+use 5.10.1;
+
 use strict;
 use warnings;
 
@@ -15,7 +17,7 @@ use Parse::RecDescent;
 # }}}
 # {{{ var block
 
-our $VERSION = 0.0577;
+our $VERSION = 0.0682;
 my $COPY     = 'Copyright (C) PetaMem, s.r.o. 2003-present';
 my $parser   = pl_numerals();
 
@@ -143,12 +145,12 @@ Lingua::POL::Word2Num
 
 =head1 VERSION
 
-version 0.0577
+version 0.0682
 
 text to positive number convertor for Polish.
 Input text must be encoded in utf-8.
 
-=head2 $Rev: 577 $
+=head2 $Rev: 682 $
 
 ISO 639-3 namespace.
 
